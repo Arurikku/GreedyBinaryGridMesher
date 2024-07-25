@@ -76,5 +76,7 @@ int main(){
     printf("%d quads were found\n", nQuads);
     for(int i = 0; i < nQuads; i++)
         printf("(%d) x=%d y=%d w=%d h=%d\n", i, outputQuads[i].xPos, outputQuads[i].yPos, outputQuads[i].width, outputQuads[i].height);
+    free(plane);
+    free(outputQuads);
     return 0;
 }
